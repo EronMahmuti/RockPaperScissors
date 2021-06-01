@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function add7(num){
+            return num + 7;
+        }
+
+        console.log(add7(6));
+
+        function multiply(num, num2){
+            return num * num2;
+        }
+        console.log(multiply(5,4));
+
+        function capitalize(word){
+            word = 'lisTa E DASMES'
+            return word.toUpperCase();
+        }
+        word = 'lista';
+        console.log(capitalize(word));
+
+        function lastLetter(word2){
+            const a = word2.length - 1;
+            var ll = word2.charAt(a);
+            return ll;
+        }
+        word2 = 'abcd';
+        console.log(lastLetter(word2));
+        
+
+        let answer = parseInt(prompt("Ju lutem shkruani numrin qe deshironi te FizzBuzz'oni "));
+        
+            for(let i =1;i<= answer;i++){
+                if(i % 3 === 0 && i % 5 === 0 ){
+                    console.log('FizzBuzz')
+                }
+                else if(i % 5 === 0){
+                    console.log('Buzz');
+                }else if(i % 3 === 0){
+                    console.log('Fizz')
+                }
+                else{
+                    console.log(i)
+                }
+            }
+        
+    </script>
+</body>
+</html>
