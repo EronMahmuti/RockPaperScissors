@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Squada One', cursive;
+    background-color: #BFD4D9;
+}
+
+.gameInterface{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.gameInterface h1{
+    margin: 1.8em;
+}
+.firstLine{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    margin: 2em;
+    font-size: 20px;
+    justify-content: center;
+}
+.computer,
+.player{
+    margin: 2.5em;
+}
+input{
+    height: 135px;
+    width: 140px;
+    border: none;
+    margin: 5px;
+    font-size: 1px;
+}
+input:hover{
+    filter: drop-shadow(2px 4px 8px #585858);
+    border-radius: 10px;
+}
+.sciss{
+    background-image: url(../images/scissor.png);
+    background-size: 100% 100%;
+}
+.pape{
+    background-image: url(../images/paper.png);
+    background-size: 100% 100%;
+}
+.roki{
+    background-image: url(../images/rocki.png);
+    background-size: 100% 100%;
+}
+.ikonat{
+    position:relative;
+    left: -25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+}
+.playAgain{
+    height: 10vh;
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+.playAgain p,
+.playAgain button{
+    margin: 11px;
+    text-transform: uppercase;
+    font-family: 'Squada One', cursive;
+    font-size: 25px;
+    
+}
+.playAgain button{
+    padding: 12px;
+    border-radius: 6px;
+    border: 3px solid #0b0c04;
+}
+.playAgain button:hover{
+    padding: 12px;
+    border-radius: 6px;
+    border: 4px solid rgba(65, 153, 109, 0.707);
+}
+.remove{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .gameInterface{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        text-align: center;
+    }
+    .gameInterface h1{
+        margin: 0.6em;
+    }
+    .firstLine{
+        flex-direction: column;
+        margin: 1em;
+        padding: 0.5em;
+        font-size: 18px;
+    }
+  }
